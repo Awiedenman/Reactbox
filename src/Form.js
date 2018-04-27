@@ -11,12 +11,13 @@ class Form extends Component {
 
     handleInput = ( e ) => {
         const{ name, value } = e.target
-        this.setState( {this.state[name] : value} );
+        this.setState( { [name] : value } );
     }
 
     submitIdea = (e) => {
         e.preventDefault()
-        this.props.addIdeas(this.state )
+        // console.log(this.state)
+        this.props.addIdeas( this.state )
     }
 
     render () {
