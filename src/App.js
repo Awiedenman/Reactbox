@@ -22,16 +22,15 @@ class App extends Component {
   console.log(id)
     localStorage.removeItem(id);
     const updatedIdeas = this.state.ideasArray.filter( idea => {return idea.id !== id})
-
-    // const newIdeasKeys = Object.keys(localStorage);
-    // const updatedIdeas = []
-    // newIdeasKeys.forEach( key => {
-    //   updatedIdeas.push( JSON.parse( localStorage.getItem(key) ))
-    // })
     this.setState( { ideasArray : updatedIdeas})    
   }
 
-  // componentDidMount()
+  componentDidMount(){
+    //loop through local storage
+    //set it to a variable
+    //set state
+    //  components will rerender once state is set
+  }
 
   render() {
     return (
