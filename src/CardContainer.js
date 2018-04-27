@@ -1,4 +1,18 @@
-// import React, { Component } from 'react';
+import React from 'react';
+import Card from './Card';
 // import '..Styles/Card.css';
 
-// class Card extends component
+const CardContainer = ({ideasArray}) => {
+    return (
+        ideasArray.map(( idea, index) => {
+            return (
+                <Card className="card-container"
+                    key={index}
+                    idea={idea} 
+                />
+                )
+            })
+        )
+        }
+
+export default CardContainer;
